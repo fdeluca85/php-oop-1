@@ -14,6 +14,7 @@ $movies = [
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
@@ -21,20 +22,20 @@ $movies = [
     <?php foreach ($movies as $movie) { ?>
         <div>
             <h2>
-                <?php echo $movie->titolo ?>
+                <?php echo $movie->getTitolo(); ?>
             </h2>
             <ul>
                 <li>
-                    <?php echo $movie->anno ?>
+                    Anno di uscita: <?php echo $movie->anno ?>
                 </li>
                 <li>
-                    <?php echo $movie->regista ?>
+                    Regista: <?php echo $movie->regista ?>
                 </li>
                 <li>
-                    <?php echo $movie->attoreProtagonista ?>
+                    Attore principale: <?php echo $movie->attoreProtagonista ?>
                 </li>
                 <li>
-                    <?php echo $movie->genere ?>
+                    Genere: <?php echo $movie->genere ?>
                 </li>
 
             </ul>

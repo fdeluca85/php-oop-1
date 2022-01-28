@@ -16,4 +16,9 @@ class Movie
         $this->attoreProtagonista = $_attoreProtagonista;
         $this->genere = $_genere;
     }
+
+    public function getTitolo()
+    {
+        return "$this->titolo";
+    }
 }
